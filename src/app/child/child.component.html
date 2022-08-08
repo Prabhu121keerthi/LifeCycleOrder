@@ -1,0 +1,15 @@
+<h2>Child Component</h2>
+
+<br/>
+<p>Message from parent via @Input is {{message}}</p>
+<br/>
+<p>Message from Parent via content Injection</p>
+<ng-content></ng-content>
+
+<br/><br/>
+Code:
+<input type="text" name="code" [(ngModel)]="customer.code" autocomplete="off">
+Name:
+<input type="text" name="name" [(ngModel)]="customer.name" autocomplete="off">
+
+<app-grandchild [customer] = "customer"></app-grandchild>
